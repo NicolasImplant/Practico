@@ -7,7 +7,31 @@
     <title>Figuras geometricas Platzi</title>
 </head>
 <body>
-    <h1>Figuras geometricas</h1>
+    <header>
+        <h1>Figuras geometricas</h1>
+        <p>Estes es el primer taller del curso practico de javascrip</p>
+    </header>
+    <section>
+        <h2>Calcula el area y el perimetro de un cuadrado</h2>
+        <form action="">
+            <label for="InputCuadrado">Escribe cuanto mide cada lado de un cuadrado:</label>
+            <input id="InputCuadrado" type="number">
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+        </form>
+    </section>
+    <section>
+        <h2>Calcula el area y el perimetro de un triangulo</h2>
+        <form action="">
+            <label for="InputTriangulo">Escribe cuanto miden la base, los lados y la altura del triangulos</label>
+            <input id="lado1"  type="number" placeholder="Lado 1">
+            <input id="lado2"  type="number" placeholder="Lado 2">
+            <input id="Altura" type="number" placeholder="Altura">
+            <input id="Base"   type="number" placeholder="Base">
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular Perimetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular Área</button>
+        </form>
+    </section>
     <script src="./figuras.js"></script>
 </body>
 </html>
