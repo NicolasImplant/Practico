@@ -15,7 +15,7 @@
         <h2>Calcula el area y el perimetro de un cuadrado</h2>
         <form action="">
             <label for="InputCuadrado">Escribe cuanto mide cada lado de un cuadrado:</label>
-            <input id="InputCuadrado" type="number">
+            <input id="InputCuadrado" type="number" placeholder="Lado">
             <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
             <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
         </form>
@@ -30,6 +30,15 @@
             <input id="Base"   type="number" placeholder="Base">
             <button type="button" onclick="calcularPerimetroTriangulo()">Calcular Perimetro</button>
             <button type="button" onclick="calcularAreaTriangulo()">Calcular Área</button>
+        </form>
+    </section>
+    <section>
+        <h2>Calcula el area y el perimetro de un circulo</h2>
+        <form action="">
+            <label for="InputCirculo">Escribe cuanto mide el radio del circulo</label>
+            <input id="InputCirculo" type="number" placeholder="Radio">
+            <button type="button" onclick="clacularPerimetroCirculo()">Calcular Perimetro</button>
+            <button type="button" onclick="clacularAreaCirculo()">Calcular Área</button>
         </form>
     </section>
     <script src="./figuras.js"></script>

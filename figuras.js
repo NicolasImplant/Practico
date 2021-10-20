@@ -84,20 +84,30 @@ function calcularAreaCuadrado(){
 
 function calcularPerimetroTriangulo(){
     const lado1 = document.getElementById("lado1");
-    const lado1 = lado1.value;
+    const l1 = parseFloat(lado1.value);
     const lado2 = document.getElementById("lado2");
-    const lado2 = lado2.value;
+    const l2 = parseFloat(lado2.value);
     const base = document.getElementById("Base");
-    const base  = base.value;
-    const perimetro = perimetroTriangulo(lado1,lado2,base);
+    const b  = parseFloat(base.value);
+    const perimetro = perimetroTriangulo(l1,l2,b);
     alert(perimetro);
 }
 
 function calcularAreaTriangulo(){
     const base = document.getElementById("Base");
-    const base  = base.value;
+    const b = parseFloat(base.value);
     const altura = document.getElementById("Altura");
-    const altura = altura.value;
-    const area = areaTriangulo(base,altura);
+    const a = parseFloat(altura.value);
+    const area = areaTriangulo(b,a);
     alert(area);
+}
+
+function clacularPerimetroCirculo(){
+    const radio = parseFloat(document.getElementById("InputCirculo").value);
+    alert(perimetroCirculo(radio));  
+}
+
+function clacularAreaCirculo(){
+    const radio = parseFloat(document.getElementById("InputCirculo").value);
+    alert(areaCirculo(radio));
 }
