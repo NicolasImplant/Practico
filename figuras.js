@@ -68,38 +68,26 @@ console.groupEnd();
 //Aqui interactuamos con HTML
 
 function calcularPerimetroCuadrado(){
-    const input = document.getElementById("InputCuadrado");
-    const value = input.value;
-    const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    const value = parseFloat(document.getElementById("InputCuadrado").value);
+    alert(perimetroCuadrado(value));
 }
 
 function calcularAreaCuadrado(){
-    const input = document.getElementById("InputCuadrado");
-    const value = input.value;
-    const area = areaCuadrado(value);
-    alert(area);
-
+    const value = parseFloat(document.getElementById("InputCuadrado").value);
+    alert(areaCuadrado(value));
 }
 
 function calcularPerimetroTriangulo(){
-    const lado1 = document.getElementById("lado1");
-    const l1 = parseFloat(lado1.value);
-    const lado2 = document.getElementById("lado2");
-    const l2 = parseFloat(lado2.value);
-    const base = document.getElementById("Base");
-    const b  = parseFloat(base.value);
-    const perimetro = perimetroTriangulo(l1,l2,b);
-    alert(perimetro);
+    const l1 = parseFloat(document.getElementById("lado1").value);
+    const l2 = parseFloat(document.getElementById("lado2").value);
+    const b = parseFloat(document.getElementById("Base").value);
+    alert(perimetroTriangulo(l1,l2,b)); 
 }
 
 function calcularAreaTriangulo(){
-    const base = document.getElementById("Base");
-    const b = parseFloat(base.value);
-    const altura = document.getElementById("Altura");
-    const a = parseFloat(altura.value);
-    const area = areaTriangulo(b,a);
-    alert(area);
+    const b = parseFloat(document.getElementById("Base").value);
+    const a = parseFloat(document.getElementById("Altura").value);
+    alert(areaTriangulo(b,a));
 }
 
 function clacularPerimetroCirculo(){
@@ -110,4 +98,9 @@ function clacularPerimetroCirculo(){
 function clacularAreaCirculo(){
     const radio = parseFloat(document.getElementById("InputCirculo").value);
     alert(areaCirculo(radio));
+}
+
+function calcularDiametroCirculo(){
+    const radio = parseFloat(document.getElementById("InputCirculo").value);
+    alert(diametroCirculo(radio));
 }
