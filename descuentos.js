@@ -1,8 +1,3 @@
-//var precioOriginal = 120;
-//var descuento      = 0.18;
-//var procentajePrecioConDescuento = (1-descuento);
-//var precioConDescuento = (precioOriginal*procentajePrecioConDescuento);
-
 function calcularPrecioConDescuento(precio,descuento,cupon){
     var bono = cupon;
     var cupones = [
@@ -18,7 +13,6 @@ function calcularPrecioConDescuento(precio,descuento,cupon){
     var procentajePrecioConDescuento = (1-descuento);
     var precioConDescuento = (precio*procentajePrecioConDescuento);
     return precioConDescuento
-
 }
 
 function onclickButtonPriceDiscount(){
@@ -30,14 +24,3 @@ function onclickButtonPriceDiscount(){
     var resultP = document.getElementById("ResultPrice")    
     resultP.innerText = "El precio con decuento son: $" + precioReal;
 }
-
-
-
-
-
-//console.log({
-//    precioOriginal,
-//    descuento,
-//    procentajePrecioConDescuento,
-//    precioConDescuento,
-//});
